@@ -1,17 +1,10 @@
 import allCountryScores from "./Score";
-import { useState } from "react";
 
 export const HighScores = () => {
-  const [descOrder, setOrder] = useState(false);
-
-  const HandleClick = (event) => {
-    setOrder("ASC");
-  };
-
   return (
     <div>
       <div>
-        <button onClick={HandleClick}>Ascending/Descending</button>
+        <button>Ascending/Descending</button>
       </div>
       {alphabeticalOrderCountries.map((item, key) => {
         return (
